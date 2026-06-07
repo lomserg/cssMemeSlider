@@ -79,18 +79,22 @@ input {
   display: block;
   width: 14px;
   height: 14px;
-  border: 2px solid #71abff;
+
+  background: #71abff;
   border-radius: 50%;
   transition: 0.3s;
 }
 
+.controls span:hover {
+  background: #fff;
+}
 .controls label:hover span {
-  background: #71abff;
+  background: #fff;
 }
 
-.controls label:active span {
+/* .controls label:active span {
   transform: scale(0.8);
-}
+} */
 
 #s1:checked ~ .slides .track {
   transform: translateX(0);
@@ -128,7 +132,8 @@ input {
 #s2:checked ~ .bottom .controls label[for="s2"] span,
 #s3:checked ~ .bottom .controls label[for="s3"] span,
 #s4:checked ~ .bottom .controls label[for="s4"] span {
-  background: #71abff;
+  background: none;
+  border: 2px solid #71abff;
 }
 
 @media (max-width: 768px) {
