@@ -123,3 +123,26 @@ input {
 #s4:checked ~ .bottom .captions .caption-track {
   transform: translateX(-75%);
 }
+
+#s1:checked ~ .bottom .controls label[for="s1"] span,
+#s2:checked ~ .bottom .controls label[for="s2"] span,
+#s3:checked ~ .bottom .controls label[for="s3"] span,
+#s4:checked ~ .bottom .controls label[for="s4"] span {
+  background: #71abff;
+}
+
+@media (max-width: 768px) {
+  .bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .captions {
+    width: 100%;
+  }
+
+  .controls {
+    align-self: center;
+  }
+}
